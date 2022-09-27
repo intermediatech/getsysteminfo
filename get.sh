@@ -9,6 +9,8 @@ lshw -html > lshw.html
 lscpu > cpu.log
 lsblk > block.log
 lspci > pci.log
+lsb_release -a > osinfo.log
+uname -a >> osinfo.log
 cd ..
 zip NV-PC-$1.asset_details.zip asset_details -r
 rm asset_details -Rf
